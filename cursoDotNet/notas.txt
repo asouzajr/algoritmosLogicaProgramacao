@@ -1,0 +1,156 @@
+Curso de .NET e C#
+
+A microsoft iniciou nos anos 70 criando linguagens de programação: BASIC;
+nOS anos 80, surge o DOS (utilizado como OS paadrão para computadores IBM) e viabilizando nos próximos anos o interesse da microsoft por SOs windows;
+nOS anos 90, a microsoft tento consolidad as ferramentas de desenvolimento (IDEs e runtimes) como o visula studio 97:
+visual basic 5, visual foxpro 5 e c++ 5, j++
+em 1998 laçamento do visual studio 6: visual basic 6, visual fox pro 6, c++6 e j++6
+Em 1999, SCOTT GUTHRIE, criou uma ferramenta web com Java, e a chamou de ASP+ (DEPOIS chamou de ASP NEXT e depois de ASPX)
+eM 2002 lançamento do visual studio .net com c# 1.0
+eM 2014 entra o CEO Satya Nadella e direciona o foco da empres par a cloud.
+
+Parte 2:  O que é, como e onde usar .net
+Introdução ao .net
+
+O .net é uma infraestrutura para desenvolviemtno de software criada pela microsoft
+Uma aplicação .net é desenvolvida para e roda em uma das seguintes implementações do .net: .net core; .net framework; mono; universal windows plataform (uwp)
+
+cada implementaçõesinclui uma ou mais .net runtimes (ambiente de execução)
+.net core: coreclr e corert
+.net framework: clr
+mono: monoruntime
+Atualmente, a microsoft desenvolve e suporta 3 linguagens para .net C#; F#; VB
+
+Onde usar o C#?
+DESKTOP (WPF, WINDOWS FORMS, UWP). WEB (ASP NET), CLOUD (AZURE), MOBILE (XAMARIN), GAMING (UNITY), IoT (ARM32 ARM64; AI.
+
+
+Quem usa .NET? casas bahia, saraiva, guarani, takeda, ctc, rodobens, press ganey, techs, unimed br, seguros unimed, vidalink licks, gol, marabrz, azul, itau e outras
+
+uage: dotnet [runtime-options] [path-to-application] [arguments]
+
+
+comandos:
+	dotnet new console -n filename -->> Criar um projeto
+	explore . -->> abre a pasta atual, com o projeto que foi criado
+	code . -->> carrega a pasta do projeto criada no visual studio code
+	dotnet restor -->> restaura o projeto
+	dotnet buid -->> restaura e constrói o projeto para execução
+	dotnet run -->> executa a aplicação com o ponto de entrada sendo o método método da classe main.
+
+
+O que é C#? --> Criada por Anders Hejlsberg, no final da década de 90 e sugiu junto como o .NET (início dos anos 2000), é A LINGUAGEM OFICIAL EM TERMOS DE .NET. 
+Mas, é importante notar que existe o F# e VB. é uma linguagem elegante, orientada a objeto e fortemente tipada;
+A sintaxe do C# é similar a do C, C++ ou Java;
+Suporta os conceitos de encapsulamento, herançae polimorfismo (OO, orientação à o objetos)
+Os programas em C# SÃO EXECUTADOS no .NET, que inclui:
+CLR (common Language Runtime)
+Conjunto unificado de bibliotecas de classes. Existe uma séria de bibliotecas a disposição para ler arquivos, classes para fazer tratativa de data e hora e outras.
+Atualmente o compilador do C# é o Roslyn, escrito em C# de código aberto (só checar o github);
+
+Como funciona? CLR (common languagem runtime)
+Primeiro, o código-fonte escrito em C# É COMPILADO em uma Linguagem Intermediária (IL)
+A seguir, os códigos e recursos de IL são armazenados no disco em um arquivo executável chamado assembly, geralmente com uma extensão .exe ou .dll (dependo do tipo de projeto)
+O comando dotnet build compila o código alto nível (escrito por nós) e compila para gerar a linguagem intermediária. Note, que se a linguagem for F# ou VB
+esse comando gerará uma mesma linguagem intermediária, essa é a ideia.
+A seguir, quando o progrma C# É EXECUTADO, O ASSEMBLY é carregado no CLR (o arquivo *.exe ou *.dll)
+EM SEGUINDA, O CLR executará a compilação just in time (JIT) para converter o código em IL em instruções de máquina nativas (seria usando o comando dotnet run).
+O CLR também fornece outros serviços, incluindo garbage collector, exception handler e resources manager.
+
+Estrutura do programa:
+os principais conceitos organizacionas em C# são: programas, namesspaces, tipos, membros e assemblies
+os progrmas consistem em um o mais arquivos
+progrmas declaram tipos, que contêm membros e podem ser organizados em namespaces
+classes e interfaces são exemplos de tipos
+campos, métodos, propriedades e eventos são exemplos de mbembros
+
+Tipos e variáveis
+Dois tipos de variáveis no C#. vARIÁVEIS DE TIPOS DE VALOR QUE CONTÊM DIRETAMENTE SEUS DADOS.
+As variáveis têm sua própria cópia dos dados e não é possível que as operações afetem outra variável (exceto no caso das variáveis de parâmetro ref e out)
+TIPOS DE VALOR:
+NUMÉRICOS: sbyte, short, int, long, byte ushort, uint, ulong
+Caracteres unicode: char
+pontos flutuantes: float double, decimal
+booleano: booleano
+enum, struct e tipos nullable (exemplo int?)
+O valor int por padrão vale zero mas, seu eu indicar que ele é nullable o valor da variável inteira iniciára com valor nulo
+
+As variável de tipo de referência armazenam referências a seus dados. O dado em si esta armazenado em outro espaço da memória. Ela só faz referência. AS
+variáveis apontam para esse valor.
+Tipos de referência: tipo classe (class, object, string); tipos arrays: int[], int[,]; interface; delegate
+
+Intruções
+ações de um programa são expressas usando instruções
+{
+	Um bloco permite que várias instruções sejam escritas
+}
+no C# INSTRUÇÕES INCLUEM  declaração de variáveis e constantes lcais, if, switch, while, do, for, foreach.
+Instruções auxiliares, incluem: break, continue, return, throw, try..., catch...finaly, using
+
+Um array é uma estrutura de dados que contém um número X de elementos, todos dos mesmo tipo, que são acessados por meio de índeices computados.
+Arrays são tipos de referência e a declaração de uma variável array simplesmente reserva espaço para uma referência de uma instância de array.
+AO CRIAR UM ARRAY É ESPECIFICADO O TAMANHO DA NOVA INSTÂNCIA, QUE É FIXO DURANTE O TODO O TEMPO DE VIDA DA INSTÂNCIA.
+oS índices dos elementos de uma array variam de 0 a comprimento do array - 1
+
+Classes e Objetos
+Classes são os tipos mais fundamentais em C#
+Uma classe é uma estrutura de dados que combina estado (campos) e ações (métodos)
+Objetos são instâncias de uma classe
+
+Ass classes suportam herança e polimorfismo, mecanimos pelos quais as classes derivadas podem estender e especializa as classes base. 
+
+Instância de classes (objetios) são criadas usando o operado new, que aloca memória para uma nova intância, chama um construtuor para inicializar a instância
+e retorna uma referência à instância
+Ponto p1 = new Ponto(0,0);
+Ponto p2 = new Ponto(10,20);
+
+
+A memória ocupada por um objeto é recuperada automaticamente quando o objetio não está mais acessível. Não é necessáro nem possível desalocar explicitamente
+objetos em C#. O garbage object tem a função de realizar essa recuperação da memória.
+
+Os membros de uma classe podem ser estátiso ou membros da instância
+
+Membros estáticos pertencem a classe e membros de instância pertencem ao objeto
+
+COnstantes, variáveis, métodos, propriedades, construtores e etc são exemplos de membros.
+
+Acessibilidade: cada membro de uma classe tem uma acessibilidade associada, que controla as regiões do texto do programa que podem acessar o membro
+
+Podem ser: public, protected, internal e private.
+o protected só podem ser acessados por classes filhas. O interno só pode ser acessado do assembly que ele pertence. O privado só será acessado único e exclusivamente
+pela classe que esta contida, mesmo de classes filhas.
+
+Herança: uma declaração de classe pode especificar uma classe base, herdando os membros public, internal e protected da classe base.
+Omitir uma especeficação de classe base é o meso que derivar do tipo object.
+
+Métodos: um método é um membro que implementa uma computação ou ação que pode ser executada por um objeto ou classe
+Os métodos podem ter uma lista de parâmetros, que representam valores ou referências de variáveis passados para o método, e um tipo de retorno que especificaro tipo 
+do valor calculado e retornado pelo método.
+
+Um método static pertence a classe e ele não pertence a instância (não posso acessar pela instância). Tem que acessar pela classe.
+
+1 - Structs
+Como as classes, as structs são estruturas de dados que podem conter membros de dados e membros de ação, mas, diferentemente das classes, as structs são
+tipos de valor ee não requerem alocação de heap
+Uma variável de um tipo de struct armazena diretamente os dados da estrutura, enquanto uma variável de um tipo de classe armazena uma referência a um objeto
+alocado na memória.
+Struct não aceitam herança determinada pelo desenvolvedor
+São úteis para pequenas estruturas de dados que possuem semântica de valor: números complexos, pontos em um sistema de coordenadas ou pares de chave-valor em um
+dicionário são bons exemplos de utilização.
+O uso de structus em vez de classes para pequeneas estruturas de dados podem fazer uma grande diferença no número de alocações de memória.
+Construtores de structs são chamados com o operador new, semelhante a um construtor de classe, mas em vez de alocar dinamicamente um objeto no heap
+gerenciado e retornar uma referência a ele, um constructor struct simplesmente retorna o próprio valor struct (normalmente em um local temporário na stack).
+e esse valor é copiado conforme necessário.
+
+Interfaces
+Uma interface define um contrato que pode ser implementado por classes e structs
+Uma interface pode conter métodos, propriedades, eventos e indexadores.
+Uma interface não fornece implementações dos membros que define - apenas suas "assinaturas"
+As interfaces podem empregar herança múltipla.
+
+Enums
+Um enum é um tipo de valor distinto com um conjunto de constantes nomeadas
+Você define enumerações quando precisa definir um tipo que pode ter um conjunto de valores discretos. Eles usam um dos tipos de valor integral como 
+armazenamento subjacente. Eles fornecem significado semântico aos valores discretos.
+Cada tipo de enum possui um tipo integral correspondente chamado tipo subjacente do tipo de enum
+Um tipo de enumeração que não declara explicitamente um tipo subjacente tem um tipo subjacente int

@@ -1,0 +1,16 @@
+E:\2021\formacaoLingProg\cursoDotNet\digitalInnovationOne\bin\Debug\net5.0\digitalInnovationOne.exe
+E:\2021\formacaoLingProg\cursoDotNet\digitalInnovationOne\bin\Debug\net5.0\digitalInnovationOne.deps.json
+E:\2021\formacaoLingProg\cursoDotNet\digitalInnovationOne\bin\Debug\net5.0\digitalInnovationOne.runtimeconfig.json
+E:\2021\formacaoLingProg\cursoDotNet\digitalInnovationOne\bin\Debug\net5.0\digitalInnovationOne.runtimeconfig.dev.json
+E:\2021\formacaoLingProg\cursoDotNet\digitalInnovationOne\bin\Debug\net5.0\digitalInnovationOne.dll
+E:\2021\formacaoLingProg\cursoDotNet\digitalInnovationOne\bin\Debug\net5.0\ref\digitalInnovationOne.dll
+E:\2021\formacaoLingProg\cursoDotNet\digitalInnovationOne\bin\Debug\net5.0\digitalInnovationOne.pdb
+E:\2021\formacaoLingProg\cursoDotNet\digitalInnovationOne\obj\Debug\net5.0\digitalInnovationOne.csproj.AssemblyReference.cache
+E:\2021\formacaoLingProg\cursoDotNet\digitalInnovationOne\obj\Debug\net5.0\digitalInnovationOne.GeneratedMSBuildEditorConfig.editorconfig
+E:\2021\formacaoLingProg\cursoDotNet\digitalInnovationOne\obj\Debug\net5.0\digitalInnovationOne.AssemblyInfoInputs.cache
+E:\2021\formacaoLingProg\cursoDotNet\digitalInnovationOne\obj\Debug\net5.0\digitalInnovationOne.AssemblyInfo.cs
+E:\2021\formacaoLingProg\cursoDotNet\digitalInnovationOne\obj\Debug\net5.0\digitalInnovationOne.csproj.CoreCompileInputs.cache
+E:\2021\formacaoLingProg\cursoDotNet\digitalInnovationOne\obj\Debug\net5.0\digitalInnovationOne.dll
+E:\2021\formacaoLingProg\cursoDotNet\digitalInnovationOne\obj\Debug\net5.0\ref\digitalInnovationOne.dll
+E:\2021\formacaoLingProg\cursoDotNet\digitalInnovationOne\obj\Debug\net5.0\digitalInnovationOne.pdb
+E:\2021\formacaoLingProg\cursoDotNet\digitalInnovationOne\obj\Debug\net5.0\digitalInnovationOne.genruntimeconfig.cache
